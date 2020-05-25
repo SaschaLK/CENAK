@@ -8,7 +8,9 @@ public class AnimalData : ScriptableObject {
     public new string name;
     public string animalGroup;
     public Sprite picture;
-    [TextArea] public string shortDescription;
-    [TextArea] public string longDescription;
+    [TextArea] public string shortDescriptionDE;
+    [TextArea] public string shortDescriptionEN;
+    [TextArea] public string longDescriptionDE;
+    [TextArea] public string longDescriptionEN;
 
 }
