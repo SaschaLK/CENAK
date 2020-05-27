@@ -6,6 +6,7 @@ using UnityEngine;
 public class AnimalData : ScriptableObject {
 
     public new string name;
+    public string latName;
     public string animalGroup;
     public Sprite picture;
     [TextArea] public string shortDescriptionDE;

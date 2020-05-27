@@ -13,20 +13,23 @@ public class SelectionManager : MonoBehaviour {
     public Button englishButton;
 
     [SerializeField] private GameObject panelSmall;
+    public Button backSmallPanel;
+    public Button more;
     [SerializeField] private GameObject panelBig;
+    public Button backBigPanel;
+    public Button group;
+
     public Text _animalNameBig;
     public Text _animalNameSmall;
     public Image _animalImageBig;
     public Image _animalImageSmall;
     public Text _animalDescriptionShort;
     public Text _animalDescriptionFull;
-    public string _animalDescriptionShortDE;
-    public string _animalDescriptionShortEN;
-    public string _animalDescriptionFullDE;
-    public string _animalDescriptionFullEN;
-    public string _animalGroup;
-
-    public Button group;
+    [HideInInspector] public string _animalDescriptionShortDE;
+    [HideInInspector] public string _animalDescriptionShortEN;
+    [HideInInspector] public string _animalDescriptionFullDE;
+    [HideInInspector] public string _animalDescriptionFullEN;
+    [HideInInspector] public string _animalGroup;
 
     private void Awake() {
         instance = this;
@@ -78,6 +81,10 @@ public class SelectionManager : MonoBehaviour {
 
         _animalDescriptionShort.text = _animalDescriptionShortDE;
         _animalDescriptionFull.text = _animalDescriptionFullDE;
+        backSmallPanel.GetComponentInChildren<Text>().text = "Zurück";
+        more.GetComponentInChildren<Text>().text = "Mehr";
+        backBigPanel.GetComponentInChildren<Text>().text = "Zurück";
+        group.GetComponentInChildren<Text>().text = "Gruppe";
     }
 
     public void SetEnglish() {
@@ -87,6 +94,10 @@ public class SelectionManager : MonoBehaviour {
 
         _animalDescriptionShort.text = _animalDescriptionShortEN;
         _animalDescriptionFull.text = _animalDescriptionFullEN;
+        backSmallPanel.GetComponentInChildren<Text>().text = "Back";
+        more.GetComponentInChildren<Text>().text = "More";
+        backBigPanel.GetComponentInChildren<Text>().text = "Back";
+        group.GetComponentInChildren<Text>().text = "Group";
     }
 
     private IEnumerator CloseP() {
