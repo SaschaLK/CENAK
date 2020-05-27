@@ -10,6 +10,7 @@ public class TouchControlls : MonoBehaviour {
     public float zoomOutMax = 10;
     public bool detailedView;
     public float margin = 0.1f;
+    public float minX, minY, maxX, maxY;
 
     private Vector3 touchStart;
     private Vector3 touchStartDrag;
@@ -58,6 +59,7 @@ public class TouchControlls : MonoBehaviour {
             else if (Input.touchCount == 1 && isDragging) {
                 Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Camera.main.transform.position += direction;
+                Camera.main.transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY), -10);
             }
         }
     }
