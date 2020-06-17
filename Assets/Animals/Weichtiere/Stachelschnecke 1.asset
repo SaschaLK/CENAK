@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: Stachelschnecke 1
+  m_EditorClassIdentifier: 
+  latName: Semiricinula fusca
+  descriptor: "(K\xFCster, 1862)"
+  animalGroups:
+  - Weichtiere
+  shortDescriptionDE: Kurzer Text
+  shortDescriptionEN: Short text
+  longDescriptionDE: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    quis augue purus. Mauris at justo finibus, egestas sapien id, tincidunt purus.
+    Cras condimentum mi ac efficitur commodo. Phasellus vulputate gravida leo. Aliquam
+    egestas gravida leo sed porta. Nam imperdiet, ipsum ut malesuada viverra, nisl
+    felis tincidunt justo, eget laoreet libero mi ut turpis. Vivamus nec posuere
+    ex.
+
+
+
+    Ut vitae tellus a ipsum ultricies efficitur. Proin mattis mi enim,
+    nec rhoncus risus bibendum at. Sed nunc dui, sollicitudin eu varius at, volutpat
+    id sapien. Ut turpis erat, fringilla a varius vel, finibus et dui. Morbi vehicula
+    tempor nulla vitae vestibulum. Nunc pharetra ut nibh vehicula placerat. Lorem
+    ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus, leo sed vulputate
+    porta, neque arcu tempus lorem, a varius justo nunc at metus.
+
+
+
+    Sed nec
+    massa et neque ultricies fringilla. Suspendisse vel risus id lacus semper vulputate.
+    Proin euismod sapien nibh. Maecenas ultrices eleifend consectetur. Nulla ipsum
+    dolor, facilisis ut pretium vitae, laoreet in odio. Pellentesque id leo et est
+    porta ultrices efficitur nec nisi. Vestibulum id ex rhoncus, volutpat turpis
+    non, volutpat tellus. Quisque sit amet justo eu massa cursus pretium. Maecenas
+    varius nisi sem, at luctus est commodo non. Donec purus eros, egestas eget sem
+    eu, sodales tempus turpis. Nulla consequat, mi et rhoncus dictum, elit diam aliquam
+    purus, ac consectetur leo ipsum pulvinar tortor. Maecenas a dui congue, pellentesque
+    justo tempus, dapibus libero.
+
+
+
+    Nunc iaculis, sapien nec congue molestie,
+    eros sapien interdum risus, sit amet vulputate neque ante sed erat. Cras faucibus
+    malesuada diam ut finibus. Aenean pharetra, leo et commodo faucibus, lectus arcu
+    lacinia nisi, vel sodales erat ante eget elit. Nulla erat eros, vulputate id
+    faucibus id, imperdiet at mauris. Duis finibus est magna, sed cursus eros eleifend
+    at. Vivamus ut vestibulum est. Pellentesque lorem nisl, condimentum facilisis
+    ipsum non, auctor convallis tortor. Phasellus scelerisque justo luctus consectetur
+    sagittis. Morbi at enim mauris. Nulla facilisi. Sed tortor libero, tincidunt
+    sit amet lorem non, sodales placerat tellus. Quisque nec leo imperdiet, dapibus
+    massa non, gravida purus.
+
+
+
+    Aenean rutrum pellentesque tincidunt. Mauris
+    ac libero non ligula commodo semper bibendum quis quam. Morbi sodales pharetra
+    mi ut viverra. Aenean eget risus tellus. In quis viverra erat. Donec convallis
+    elementum orci commodo gravida. Praesent varius ex tortor, vitae tincidunt massa
+    pretium sit amet. Curabitur lobortis nisl in iaculis mattis. Fusce non eros sed
+    felis blandit dignissim vel et est. Proin sollicitudin venenatis ligula, ac sodales
+    neque ornare vitae. Aenean dignissim ornare metus, id maximus lectus vestibulum
+    vitae. Maecenas nunc dui, rutrum eu hendrerit vel, pellentesque sed tortor. Sed
+    et libero facilisis, facilisis dui sed, placerat metus.'
+  longDescriptionEN: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    quis augue purus. Mauris at justo finibus, egestas sapien id, tincidunt purus.
+    Cras condimentum mi ac efficitur commodo. Phasellus vulputate gravida leo. Aliquam
+    egestas gravida leo sed porta. Nam imperdiet, ipsum ut malesuada viverra, nisl
+    felis tincidunt justo, eget laoreet libero mi ut turpis. Vivamus nec posuere
+    ex.
+
+
+
+    Ut vitae tellus a ipsum ultricies efficitur. Proin mattis mi enim,
+    nec rhoncus risus bibendum at. Sed nunc dui, sollicitudin eu varius at, volutpat
+    id sapien. Ut turpis erat, fringilla a varius vel, finibus et dui. Morbi vehicula
+    tempor nulla vitae vestibulum. Nunc pharetra ut nibh vehicula placerat. Lorem
+    ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus, leo sed vulputate
+    porta, neque arcu tempus lorem, a varius justo nunc at metus.
+
+
+
+    Sed nec
+    massa et neque ultricies fringilla. Suspendisse vel risus id lacus semper vulputate.
+    Proin euismod sapien nibh. Maecenas ultrices eleifend consectetur. Nulla ipsum
+    dolor, facilisis ut pretium vitae, laoreet in odio. Pellentesque id leo et est
+    porta ultrices efficitur nec nisi. Vestibulum id ex rhoncus, volutpat turpis
+    non, volutpat tellus. Quisque sit amet justo eu massa cursus pretium. Maecenas
+    varius nisi sem, at luctus est commodo non. Donec purus eros, egestas eget sem
+    eu, sodales tempus turpis. Nulla consequat, mi et rhoncus dictum, elit diam aliquam
+    purus, ac consectetur leo ipsum pulvinar tortor. Maecenas a dui congue, pellentesque
+    justo tempus, dapibus libero.
+
+
+
+    Nunc iaculis, sapien nec congue molestie,
+    eros sapien interdum risus, sit amet vulputate neque ante sed erat. Cras faucibus
+    malesuada diam ut finibus. Aenean pharetra, leo et commodo faucibus, lectus arcu
+    lacinia nisi, vel sodales erat ante eget elit. Nulla erat eros, vulputate id
+    faucibus id, imperdiet at mauris. Duis finibus est magna, sed cursus eros eleifend
+    at. Vivamus ut vestibulum est. Pellentesque lorem nisl, condimentum facilisis
+    ipsum non, auctor convallis tortor. Phasellus scelerisque justo luctus consectetur
+    sagittis. Morbi at enim mauris. Nulla facilisi. Sed tortor libero, tincidunt
+    sit amet lorem non, sodales placerat tellus. Quisque nec leo imperdiet, dapibus
+    massa non, gravida purus.
+
+
+
+    Aenean rutrum pellentesque tincidunt. Mauris
+    ac libero non ligula commodo semper bibendum quis quam. Morbi sodales pharetra
+    mi ut viverra. Aenean eget risus tellus. In quis viverra erat. Donec convallis
+    elementum orci commodo gravida. Praesent varius ex tortor, vitae tincidunt massa
+    pretium sit amet. Curabitur lobortis nisl in iaculis mattis. Fusce non eros sed
+    felis blandit dignissim vel et est. Proin sollicitudin venenatis ligula, ac sodales
+    neque ornare vitae. Aenean dignissim ornare metus, id maximus lectus vestibulum
+    vitae. Maecenas nunc dui, rutrum eu hendrerit vel, pellentesque sed tortor. Sed
+    et libero facilisis, facilisis dui sed, placerat metus.'

@@ -5,10 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Animal", menuName = "Animal")]
 public class AnimalData : ScriptableObject {
 
-    public new string name;
     public string latName;
-    public string animalGroup;
-    public Sprite picture;
+    public string descriptor;
+    public List<string> animalGroups;
     [TextArea] public string shortDescriptionDE;
     [TextArea] public string shortDescriptionEN;
     [TextArea] public string longDescriptionDE;

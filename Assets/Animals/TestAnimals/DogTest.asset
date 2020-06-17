@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
   m_Name: DogTest
   m_EditorClassIdentifier: 
-  name: Dog
+  latName: Canis lupus familiaris
+  descriptor: Linnaeus, 1758
   animalGroup: Main
-  picture: {fileID: 21300000, guid: c3a9f8335bc21304685d3e71f15d2f33, type: 3}
   shortDescriptionDE: Deutscher Kurztext.
   shortDescriptionEN: "English short text\t."
   longDescriptionDE: 'Deutscher Langtext. Lorem ipsum dolor sit amet, consectetur

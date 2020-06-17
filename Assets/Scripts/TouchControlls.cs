@@ -54,12 +54,16 @@ public class TouchControlls : MonoBehaviour {
 
                 float difference = currentMagnitude - prevMagnitude;
 
-                Zoom(difference * 0.01f);
+                Zoom(difference * 0.001f * Camera.main.orthographicSize);
             }
-            else if (Input.touchCount == 1 && isDragging) {
+            else if ((Input.touchCount == 1 && isDragging) || (Input.GetMouseButton(0) && isDragging)) {
                 Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Camera.main.transform.position += direction;
                 Camera.main.transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY), -10);
+            }
+
+            if(Input.GetAxis("Mouse ScrollWheel") != 0) {
+                Zoom(Input.GetAxis("Mouse ScrollWheel") * 4);
             }
         }
     }
@@ -67,5 +71,4 @@ public class TouchControlls : MonoBehaviour {
     private void Zoom(float increment) {
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
     }
-
 }

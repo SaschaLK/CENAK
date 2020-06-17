@@ -8,19 +8,21 @@ public class SelectionManager : MonoBehaviour {
 
     public static SelectionManager instance;
 
+    [Space(10)]
     public bool german;
     public Button germanButton;
     public Button englishButton;
 
+    [Space(10)]
     [SerializeField] private GameObject panelSmall;
-    public Button backSmallPanel;
     public Button more;
     [SerializeField] private GameObject panelBig;
-    public Button backBigPanel;
-    public Button group;
 
+    [Space(10)]
     public Text _animalNameBig;
+    public Text _animalNameSubtextBig;
     public Text _animalNameSmall;
+    public Text _animalNameSubtextSmall;
     public Image _animalImageBig;
     public Image _animalImageSmall;
     public Text _animalDescriptionShort;
@@ -29,20 +31,27 @@ public class SelectionManager : MonoBehaviour {
     [HideInInspector] public string _animalDescriptionShortEN;
     [HideInInspector] public string _animalDescriptionFullDE;
     [HideInInspector] public string _animalDescriptionFullEN;
-    [HideInInspector] public string _animalGroup;
+
+    [Space(10)]
+    public List<Button> animalGroupButtons;
+    [HideInInspector] public List<string> _animalGroups;
 
     private void Awake() {
         instance = this;
     }
-    public void SetAnimal(string animalName, Sprite animalImage, string animalDescriptionShortDE, string animalDescriptionShortEN, string animalDescriptionFullDE, string animalDescriptionFullEN, string animalGroup) {
+
+    public void SetAnimal(string animalName, string animalNameSubtext, Sprite animalImage, string animalDescriptionShortDE, string animalDescriptionShortEN, string animalDescriptionFullDE, string animalDescriptionFullEN, List<string> animalGroups) {
         _animalNameBig.text = animalName;
+        _animalNameSubtextBig.text = animalNameSubtext;
         _animalNameSmall.text = animalName;
+        _animalNameSubtextSmall.text = animalNameSubtext;
         _animalImageBig.sprite = animalImage;
         _animalImageSmall.sprite = animalImage;
         _animalDescriptionShortDE = animalDescriptionShortDE;
         _animalDescriptionShortEN = animalDescriptionShortEN;
         _animalDescriptionFullDE = animalDescriptionFullDE;
         _animalDescriptionFullEN = animalDescriptionFullEN;
+        _animalGroups = animalGroups;
 
         if (german) {
             _animalDescriptionShort.text = _animalDescriptionShortDE;
@@ -53,19 +62,33 @@ public class SelectionManager : MonoBehaviour {
             _animalDescriptionFull.text = _animalDescriptionFullEN;
         }
 
-        _animalGroup = animalGroup;
+        for(int i = 0; i < 4; i++) {
+            if(i < _animalGroups.Count) {
+                animalGroupButtons[i].GetComponentInChildren<Text>().text = _animalGroups[i]; 
+                animalGroupButtons[i].gameObject.SetActive(true);
+            }
+            else {
+                animalGroupButtons[i].gameObject.SetActive(false);
+            }
+        }
 
         TouchControlls.instance.detailedView = true;
         panelSmall.SetActive(true);
     }
 
+    public void SetGroupText(Button group) {
+        string groupName = group.GetComponentInChildren<Text>().text;
+
+        foreach(AnimalGroups.AnimalGroup animalGroup in AnimalGroups.instance.animalGroups) {
+            if (groupName.Equals(animalGroup.name)) {
+                _animalDescriptionFull.text = animalGroup.description;
+            }
+        }
+    }
+
     public void OpenBigInfo() {
         panelSmall.SetActive(false);
         panelBig.SetActive(true);
-    }
-
-    public void LoadAnimalGroupScene() {
-        SceneManager.LoadScene(_animalGroup);
     }
 
     public void ClosePanel() {
@@ -81,10 +104,7 @@ public class SelectionManager : MonoBehaviour {
 
         _animalDescriptionShort.text = _animalDescriptionShortDE;
         _animalDescriptionFull.text = _animalDescriptionFullDE;
-        backSmallPanel.GetComponentInChildren<Text>().text = "Zurück";
         more.GetComponentInChildren<Text>().text = "Mehr";
-        backBigPanel.GetComponentInChildren<Text>().text = "Zurück";
-        group.GetComponentInChildren<Text>().text = "Gruppe";
     }
 
     public void SetEnglish() {
@@ -94,10 +114,7 @@ public class SelectionManager : MonoBehaviour {
 
         _animalDescriptionShort.text = _animalDescriptionShortEN;
         _animalDescriptionFull.text = _animalDescriptionFullEN;
-        backSmallPanel.GetComponentInChildren<Text>().text = "Back";
         more.GetComponentInChildren<Text>().text = "More";
-        backBigPanel.GetComponentInChildren<Text>().text = "Back";
-        group.GetComponentInChildren<Text>().text = "Group";
     }
 
     private IEnumerator CloseP() {
