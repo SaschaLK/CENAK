@@ -1,0 +1,213 @@
+h1, h2,  {
+font: 200 90.1% "FontinSansBold", Lucida Grande, Verdana, sans-serif;
+color: #555
+text-align:center; 
+text-transform: none;
+}
+
+h3 { 
+font-size: 1.2em; 
+font: 200 90.1% "FontinSansBold", Lucida Grande, Verdana, sans-serif;
+color: #white; 
+text-align:center; 
+text-transform: none;}
+
+
+body {
+    background: #000000;
+    color: #fff;
+    font: 200 90.1% "NobileRegular", "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+	font-size:14px;
+}
+
+input.group
+{
+
+font-family:"FontinSansBold"Arial,sans-serif;
+color:#959595;
+font-size:18px;
+border: none;
+background-color:#000;
+position: absolute; 
+top:823px; 
+left:185px; 
+width:995px; 
+height:55px
+padding:3px;
+}
+
+input.index
+{
+
+font-family:"FontinSansBold"Arial,sans-serif;
+color:#959595;
+font-size:18px;
+border: none;
+background-color:#000;
+position: absolute; 
+top:823px; 
+left:105px; 
+width: 995px; 
+height: 55px
+padding:3px;
+}
+ 
+
+			 
+@font-face {
+    font-family: 'NobileRegular';
+    src: url('nobile-webfont.eot');
+    src: url('nobile-webfont.eot?iefix') format('eot'),
+         url('nobile-webfont.woff') format('woff'),
+         url('nobile-webfont.ttf') format('truetype'),
+         url('nobile-webfont.svg#webfontsKo9tqe9') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NobileItalic';
+    src: url('nobile_italic-webfont.eot');
+    src: url('nobile_italic-webfont.eot?iefix') format('eot'),
+         url('nobile_italic-webfont.woff') format('woff'),
+         url('nobile_italic-webfont.ttf') format('truetype'),
+         url('nobile_italic-webfont.svg#webfonttc09wOXW') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NobileBold';
+    src: url('nobile_bold-webfont.eot');
+    src: url('nobile_bold-webfont.eot?iefix') format('eot'),
+         url('nobile_bold-webfont.woff') format('woff'),
+         url('nobile_bold-webfont.ttf') format('truetype'),
+         url('nobile_bold-webfont.svg#webfont6RUKcuF0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NobileBoldItalic';
+    src: url('nobile_bold_italic-webfont.eot');
+    src: url('nobile_bold_italic-webfont.eot?iefix') format('eot'),
+         url('nobile_bold_italic-webfont.woff') format('woff'),
+         url('nobile_bold_italic-webfont.ttf') format('truetype'),
+         url('nobile_bold_italic-webfont.svg#webfontClxEK9et') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+
+@font-face {
+    font-family: 'Puritan20Bold';
+    src: /puritan('puritan_bold-webfont.eot');
+    src: /puritan('puritan_bold-webfont.eot?iefix') format('eot'),
+         /puritan('puritan_bold-webfont.woff') format('woff'),
+         /puritan('puritan_bold-webfont.ttf') format('truetype'),
+         /puritan('puritan_bold-webfont.svg#webfontrLd2J384') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Puritan20BoldItalic';
+    src: /puritan('puritan_bold_italic-webfont.eot');
+    src: /puritan('puritan_bold_italic-webfont.eot?iefix') format('eot'),
+         /puritan('puritan_bold_italic-webfont.woff') format('woff'),
+         /puritan('puritan_bold_italic-webfont.ttf') format('truetype'),
+         /puritan('puritan_bold_italic-webfont.svg#webfontvVpQkmMc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Puritan20Italic';
+    src: /puritan('puritan_italic-webfont.eot');
+    src: /puritan('puritan_italic-webfont.eot?iefix') format('eot'),
+         /puritan('puritan_italic-webfont.woff') format('woff'),
+         /puritan('puritan_italic-webfont.ttf') format('truetype'),
+         /puritan('puritan_italic-webfont.svg#webfontfe2bsmda') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Puritan20Normal';
+    src: /puritan('puritan_regular-webfont.eot');
+    src: /puritan('puritan_regular-webfont.eot?iefix') format('eot'),
+         /puritan('puritan_regular-webfont.woff') format('woff'),
+         /puritan('puritan_regular-webfont.ttf') format('truetype'),
+         /puritan('puritan_regular-webfont.svg#webfont6FUPR1u6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'FontinSansBold';
+    src: url('fontin_sans_b_45b-webfont.eot');
+    src: url('fontin_sans_b_45b-webfont.eot?iefix') format('eot'),
+         url('fontin_sans_b_45b-webfont.woff') format('woff'),
+         url('fontin_sans_b_45b-webfont.ttf') format('truetype'),
+         url('fontin_sans_b_45b-webfont.svg#webfontnD9WKQ5T') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FontinSansBoldItalic';
+    src: url('fontin_sans_bi_45b-webfont.eot');
+    src: url('fontin_sans_bi_45b-webfont.eot?iefix') format('eot'),
+         url('fontin_sans_bi_45b-webfont.woff') format('woff'),
+         url('fontin_sans_bi_45b-webfont.ttf') format('truetype'),
+         url('fontin_sans_bi_45b-webfont.svg#webfontzwvNxuz4') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FontinSansItalic';
+    src: url('fontin_sans_i_45b-webfont.eot');
+    src: url('fontin_sans_i_45b-webfont.eot?iefix') format('eot'),
+         url('fontin_sans_i_45b-webfont.woff') format('woff'),
+         url('fontin_sans_i_45b-webfont.ttf') format('truetype'),
+         url('fontin_sans_i_45b-webfont.svg#webfont9tPNg5K2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FontinSansRegular';
+    src: url('fontin_sans_r_45b-webfont.eot');
+    src: url('fontin_sans_r_45b-webfont.eot?iefix') format('eot'),
+         url('fontin_sans_r_45b-webfont.woff') format('woff'),
+         url('fontin_sans_r_45b-webfont.ttf') format('truetype'),
+         url('fontin_sans_r_45b-webfont.svg#webfontvnE3sJbF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FontinSansSmallCaps';
+    src: url('fontin_sans_sc_45b-webfont.eot');
+    src: url('fontin_sans_sc_45b-webfont.eot?iefix') format('eot'),
+         url('fontin_sans_sc_45b-webfont.woff') format('woff'),
+         url('fontin_sans_sc_45b-webfont.ttf') format('truetype'),
+         url('fontin_sans_sc_45b-webfont.svg#webfontlkjJgpEc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
