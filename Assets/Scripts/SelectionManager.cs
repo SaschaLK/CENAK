@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SelectionManager : MonoBehaviour {
 
+#pragma warning disable 0649
+
     public static SelectionManager instance;
 
     [Space(10)]
@@ -14,21 +16,13 @@ public class SelectionManager : MonoBehaviour {
     public Button englishButton;
 
     [Space(10)]
-    [SerializeField] private GameObject panelSmall;
-    public Button more;
     [SerializeField] private GameObject panelBig;
 
     [Space(10)]
     public Text _animalNameBig;
     public Text _animalNameSubtextBig;
-    public Text _animalNameSmall;
-    public Text _animalNameSubtextSmall;
     public Image _animalImageBig;
-    public Image _animalImageSmall;
-    public Text _animalDescriptionShort;
-    public Text _animalDescriptionFull;
-    [HideInInspector] public string _animalDescriptionShortDE;
-    [HideInInspector] public string _animalDescriptionShortEN;
+    public Text _animalDescription;
     [HideInInspector] public string _animalDescriptionFullDE;
     [HideInInspector] public string _animalDescriptionFullEN;
 
@@ -40,26 +34,19 @@ public class SelectionManager : MonoBehaviour {
         instance = this;
     }
 
-    public void SetAnimal(string animalName, string animalNameSubtext, Sprite animalImage, string animalDescriptionShortDE, string animalDescriptionShortEN, string animalDescriptionFullDE, string animalDescriptionFullEN, List<string> animalGroups) {
+    public void SetAnimal(string animalName, string animalNameSubtext, Sprite animalImage, string animalDescriptionFullDE, string animalDescriptionFullEN, List<string> animalGroups) {
         _animalNameBig.text = animalName;
         _animalNameSubtextBig.text = animalNameSubtext;
-        _animalNameSmall.text = animalName;
-        _animalNameSubtextSmall.text = animalNameSubtext;
         _animalImageBig.sprite = animalImage;
-        _animalImageSmall.sprite = animalImage;
-        _animalDescriptionShortDE = animalDescriptionShortDE;
-        _animalDescriptionShortEN = animalDescriptionShortEN;
         _animalDescriptionFullDE = animalDescriptionFullDE;
         _animalDescriptionFullEN = animalDescriptionFullEN;
         _animalGroups = animalGroups;
 
         if (german) {
-            _animalDescriptionShort.text = _animalDescriptionShortDE;
-            _animalDescriptionFull.text = _animalDescriptionFullDE;
+            _animalDescription.text = _animalDescriptionFullDE;
         }
         else {
-            _animalDescriptionShort.text = _animalDescriptionShortEN;
-            _animalDescriptionFull.text = _animalDescriptionFullEN;
+            _animalDescription.text = _animalDescriptionFullEN;
         }
 
         for(int i = 0; i < 4; i++) {
@@ -72,8 +59,9 @@ public class SelectionManager : MonoBehaviour {
             }
         }
 
-        TouchControlls.instance.detailedView = true;
-        panelSmall.SetActive(true);
+        //TouchControlls.instance.detailedView = true;
+        MainCameraController.instance.detailedView = true;
+        OpenBigInfo();
     }
 
     public void SetGroupText(Button group) {
@@ -81,18 +69,24 @@ public class SelectionManager : MonoBehaviour {
 
         foreach(AnimalGroups.AnimalGroup animalGroup in AnimalGroups.instance.animalGroups) {
             if (groupName.Equals(animalGroup.name)) {
-                _animalDescriptionFull.text = animalGroup.description;
+                _animalDescriptionFullDE = animalGroup.descriptionDE;
+                _animalDescriptionFullEN = animalGroup.descriptionEN;
+
+                if (german) {
+                    _animalDescription.text = _animalDescriptionFullDE;
+                }
+                else {
+                    _animalDescription.text = animalGroup.descriptionEN;
+                }
             }
         }
     }
 
     public void OpenBigInfo() {
-        panelSmall.SetActive(false);
         panelBig.SetActive(true);
     }
 
     public void ClosePanel() {
-        panelSmall.SetActive(false);
         panelBig.SetActive(false);
         StartCoroutine(CloseP());
     }
@@ -102,9 +96,7 @@ public class SelectionManager : MonoBehaviour {
         germanButton.interactable = false;
         englishButton.interactable = true;
 
-        _animalDescriptionShort.text = _animalDescriptionShortDE;
-        _animalDescriptionFull.text = _animalDescriptionFullDE;
-        more.GetComponentInChildren<Text>().text = "Mehr";
+        _animalDescription.text = _animalDescriptionFullDE;
     }
 
     public void SetEnglish() {
@@ -112,14 +104,13 @@ public class SelectionManager : MonoBehaviour {
         germanButton.interactable = true;
         englishButton.interactable = false;
 
-        _animalDescriptionShort.text = _animalDescriptionShortEN;
-        _animalDescriptionFull.text = _animalDescriptionFullEN;
-        more.GetComponentInChildren<Text>().text = "More";
+        _animalDescription.text = _animalDescriptionFullEN;
     }
 
     private IEnumerator CloseP() {
         yield return new WaitForSecondsRealtime(0.1f);
-        TouchControlls.instance.detailedView = false;
+        //TouchControlls.instance.detailedView = false;
+        MainCameraController.instance.detailedView = false;
     }
 
 }

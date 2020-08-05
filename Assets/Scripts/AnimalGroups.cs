@@ -14,6 +14,7 @@ public class AnimalGroups : MonoBehaviour {
 
     [System.Serializable] public class AnimalGroup {
         public string name;
-        [TextArea] public string description;
+        [TextArea] public string descriptionDE;
+        [TextArea] public string descriptionEN;
     }
 }

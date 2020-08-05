@@ -8,9 +8,6 @@ public class AnimalData : ScriptableObject {
     public string latName;
     public string descriptor;
     public List<string> animalGroups;
-    [TextArea] public string shortDescriptionDE;
-    [TextArea] public string shortDescriptionEN;
-    [TextArea] public string longDescriptionDE;
-    [TextArea] public string longDescriptionEN;
-
+    [TextArea] public string DescriptionDE;
+    [TextArea] public string DescriptionEN;
 }

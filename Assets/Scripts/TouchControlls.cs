@@ -23,7 +23,8 @@ public class TouchControlls : MonoBehaviour {
 
     private void Update() {
         if (!detailedView) {
-            if (Input.GetMouseButtonDown(0)) {
+            if (Input.GetMouseButtonDown(0) || (Input.touchCount == 1 && !isDragging)) {
+                Debug.Log(Input.mousePosition);
                 touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 touchStartDrag = Input.mousePosition;
                 isDragging = true;
