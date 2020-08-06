@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: Schwebfliege
+  m_EditorClassIdentifier: 
+  latName: 
+  descriptor: 
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "Zweifl\xFCgler"
+  - Schwebfliegen
+  DescriptionDE: "Schwebfliegen (Syrphidae) sind weltweit mit \xFCber 6.000 Arten,
+    in Deutschland mit etwa 440 vertreten. Sie werden vom Menschen gesch\xE4tzt,
+    da sie optisch attraktiv und n\xFCtzlich sind, da ihre Larven viele Blattl\xE4use
+    fressen. Die Erwachsenen treten meist an Bl\xFCten in Erscheinung, wo sie gern
+    im Schwirrflug an einer Stelle verharren. An ihrem Flug kann man sie gut von 
+    Wespen unterscheiden, denen Schwebfliegen sonst farblich \xE4hneln. Diese F\xE4rbung
+    gibt ihnen einen gewissen Schutz vor Fressfeinden. Schwebfliegen sind, neben 
+    Bienen, sehr wichtig als Best\xE4uber."
+  DescriptionEN: 

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: Singzikade 1
+  m_EditorClassIdentifier: 
+  latName: 
+  descriptor: 
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - Schnabelkerfe
+  - Zikaden
+  DescriptionDE: "Zur Familie der Singzikaden (Cicadidae) geh\xF6ren mehrere tausend
+    Arten. Ihre M\xE4nnchen haben einen speziellen Gesangsapparat, den sogenannten
+    Tymbel. Damit erzeugen sie Ger\xE4usche, um Weibchen anzulocken oder Rivalen
+    und R\xE4uber zu verwirren. Das lauteste Insekt der Welt geh\xF6rt zu den Singzikaden:
+    Eine australische Art produziert ein Ger\xE4usch von 109 Dezibel Lautst\xE4rke
+    und ist damit fast so laut wie ein D\xFCsenflugzeug."
+  DescriptionEN: 

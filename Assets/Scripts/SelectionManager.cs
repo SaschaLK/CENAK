@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Text.RegularExpressions;
+using System;
 
 public class SelectionManager : MonoBehaviour {
 
@@ -66,9 +68,12 @@ public class SelectionManager : MonoBehaviour {
 
     public void SetGroupText(Button group) {
         string groupName = group.GetComponentInChildren<Text>().text;
+        string groupNameClean = Regex.Replace(groupName, @"\s", "");
 
         foreach(AnimalGroups.AnimalGroup animalGroup in AnimalGroups.instance.animalGroups) {
-            if (groupName.Equals(animalGroup.name)) {
+            string _groupNameClean = Regex.Replace(animalGroup.name, @"\s", "");
+
+            if(string.Equals(groupNameClean, _groupNameClean)) {
                 _animalDescriptionFullDE = animalGroup.descriptionDE;
                 _animalDescriptionFullEN = animalGroup.descriptionEN;
 
@@ -78,6 +83,7 @@ public class SelectionManager : MonoBehaviour {
                 else {
                     _animalDescription.text = animalGroup.descriptionEN;
                 }
+                break;
             }
         }
     }

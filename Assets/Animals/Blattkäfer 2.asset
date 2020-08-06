@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: "Blattk\xE4fer 2"
+  m_EditorClassIdentifier: 
+  latName: 
+  descriptor: 
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "K\xE4fer"
+  - "Blattk\xE4fer"
+  DescriptionDE: "Etwa 32.000 Blattk\xE4fer (Chrysomelidae) sind in Mitteleuropa
+    durch 600 Arten vertreten. Sie sind h\xE4ufig auff\xE4llig gef\xE4rbt, unter
+    anderem metallisch gl\xE4nzend:  Das soll potentielle Angreifer davor warnen,
+    dass die Tiere in ihren K\xF6rpern Gifte enthalten. Fast alle Blattk\xE4fer sind
+    Pflanzenfresser, und ern\xE4hren sich am liebsten von Bl\xE4ttern. Sie treten
+    h\xE4ufig als Sch\xE4dlinge in der Landwirtschaft auf."
+  DescriptionEN: 

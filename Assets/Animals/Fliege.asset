@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: Fliege
+  m_EditorClassIdentifier: 
+  latName: 
+  descriptor: 
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "Zweifl\xFCgler"
+  DescriptionDE: "Allen Zweifl\xFCglern (Diptera), also Fliegen und M\xFCcken, ist
+    gemein, dass sie im Gegensatz zu den meisten Insekten nur ein Fl\xFCgelpaar haben.
+    Das hintere wurde zu kleinen Schwingk\xF6lbchen, die als Gleichgewichtsorgane
+    f\xFCr das gute Flugverm\xF6gen der Tiere mit verantwortlich sind. Auch das Sehverm\xF6gen
+    der Zweifl\xFCgler ist dank ihrer gro\xDFen Augen gut. Die etwa 160.000 Arten
+    sind sehr divers in ihrer Lebensweise und erf\xFCllen viele \xF6kologischen Rollen
+    in der Natur: Es gibt r\xE4uberische, parasitische, pflanzenfressende, aas- und
+    kotfressende sowie blutsaugende Arten. Viele Fliegen und M\xFCcken sind auch
+    f\xFCr den Menschen als N\xFCtzlinge oder Sch\xE4dlinge wichtig.  "
+  DescriptionEN: 

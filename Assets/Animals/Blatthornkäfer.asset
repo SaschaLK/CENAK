@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: "Blatthornk\xE4fer"
+  m_EditorClassIdentifier: 
+  latName: 
+  descriptor: 
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "K\xE4fer"
+  - "Blatthornk\xE4fer"
+  DescriptionDE: "200 Arten der Blatthornk\xE4fer (Scarabaeidae) leben in Mitteleuropa
+    und 27.000 weltweit. Namensgebend sind ihre F\xFChler mit blattf\xF6rmigen, spreizbaren
+    letzten Gliedern. Blatthornk\xE4fer sind meistens robust gebaut und an grabende
+    Lebensweise angepasst. Die M\xE4nnchen sind h\xE4ufig gr\xF6\xDFer als die Weibchen
+    und tragen hornartige Ausw\xFCchse des Panzers, die sie im Kampf gegen Rivalen
+    einsetzen. Larven und Erwachsene ern\xE4hren sich von frischem und zersetzendem
+    Pflanzenmaterial oder von Mist. "
+  DescriptionEN: 

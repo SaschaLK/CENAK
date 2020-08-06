@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: "Prachtk\xE4fer 2"
+  m_EditorClassIdentifier: 
+  latName: Euchroma gigantea
+  descriptor: (Linneaus, 1758)
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "K\xE4fer"
+  - "Prachtk\xE4fer"
+  DescriptionDE: "Dies ist einer der gr\xF6\xDFten Prachtk\xE4fer der Welt, auch
+    seine Larven werden bis zu 15 Zentimeter lang. Die Art lebt in Zentral- und S\xFCdamerika.
+    Die Larven ern\xE4hren sich von morschem Holz unterschiedlicher Baumarten. Die
+    M\xE4nnchen locken die Weibchen mit einem klickendem Ger\xE4usch an, das sie
+    mit ihren Deckfl\xFCgeln erzeugen. "
+  DescriptionEN: 

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: "Langbeiniger Blatthornk\xE4fer"
+  m_EditorClassIdentifier: 
+  latName: Cheirotonus arnaudi
+  descriptor: Minet, 1981
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "K\xE4fer"
+  - "Blatthornk\xE4fer"
+  DescriptionDE: "Der Langbeinige Blatthornk\xE4fer  lebt auf der Malayischen Halbinsel.
+    Die Erwachsenen trinken gern Zuckersaft von Bambus oder anderen Pflanzen, die
+    Larven ern\xE4hren sich vom morschen Holz. Ihre langen Beine setzen die M\xE4nnchen
+    vermutlich ein, um Rivalen von ihren Weibchen fernzuhalten. Die Weibchen selbst
+    haben keine so langen Beine. "
+  DescriptionEN: 

@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 public class SceneLoader : MonoBehaviour {
 
+    public static SceneLoader instance;
+
     public int waitTime;
     public GameObject homeButton;
+    public bool inputGiven;
 
-    private bool inputGiven;
     private float elapsedTime;
     private Vector3 cameraStartPosition;
     private float cameraStartSize;
+
+    private void Awake() {
+        instance = this;
+    }
 
     private void Start() {
         cameraStartPosition = Camera.main.transform.position;

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: Blattwespe 2
+  m_EditorClassIdentifier: 
+  latName: 
+  descriptor: 
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - "Hautfl\xFCgler"
+  - echte Blattwespen
+  DescriptionDE: "Von echten Blattwespen (Tenthredinidae) gibt es etwa 5.500 Arten,
+    darunter 900 in Europa. Ihre raupen\xE4hnlichen Larven fressen Bl\xE4tter und
+    anderes weiche Gewebe von unterschiedlichen Pflanzen. Viele Arten sind in der
+    Landwirtschaft als Sch\xE4dlinge bekannt. "
+  DescriptionEN: 

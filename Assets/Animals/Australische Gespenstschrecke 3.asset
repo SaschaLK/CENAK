@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdbe56beaac6104c8f8efa53821d3a8, type: 3}
+  m_Name: Australische Gespenstschrecke 3
+  m_EditorClassIdentifier: 
+  latName: Extatosoma tiaratum
+  descriptor: (MacLeay, 1827), Larve
+  animalGroups:
+  - "Gliederf\xFC\xDFer"
+  - Insekten
+  - Gespensterschrecken
+  DescriptionDE: "Die Australische Gespenstschrecke lebt in den W\xE4ldern von Australien
+    und Neuguinea und frisst Bl\xE4tter der Eukalyptus-B\xE4ume. Die Weibchen der
+    Gespensterschrecken werfen ihre Eier auf den Boden. Einige Ameisenarten verwechseln
+    diese anscheinend mit S\xE4mereien und tragen sie in ihre Nester. Dort schl\xFCpfen
+    die jungen Gespenstschrecken, die am Anfang den Ameisen stark \xE4hneln und deswegen
+    ihren Schutz genie\xDFen. Sp\xE4ter, wenn sie bereits im Ge\xE4st der B\xE4ume
+    leben, k\xF6nnen sie sich durch gezieltes Abwerfen von Beinen vor Fressfeinden
+    sch\xFCtzen \u2013 und nat\xFCrlich durch ihre K\xF6rperform, die mehr an eine
+    Pflanze als an ein Tier erinnert."
+  DescriptionEN: 
