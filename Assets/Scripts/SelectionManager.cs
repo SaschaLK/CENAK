@@ -21,28 +21,37 @@ public class SelectionManager : MonoBehaviour {
     [SerializeField] private GameObject panelBig;
 
     [Space(10)]
-    public Text _animalNameBig;
+    public Button _animalNameBig;
     public Text _animalNameSubtextBig;
-    public Image _animalImageBig;
+    public Button _animalImageBig;
     public Text _animalDescription;
     [HideInInspector] public string _animalDescriptionFullDE;
     [HideInInspector] public string _animalDescriptionFullEN;
+    private string animalDescriptionBackupDE;
+    private string animalDescriptionBackupEN;
 
     [Space(10)]
     public List<Button> animalGroupButtons;
     [HideInInspector] public List<string> _animalGroups;
+    public Color selectedButtonColor;
+    public Color standardButtonColor;
+
+    private Button selectedButton;
 
     private void Awake() {
         instance = this;
     }
 
     public void SetAnimal(string animalName, string animalNameSubtext, Sprite animalImage, string animalDescriptionFullDE, string animalDescriptionFullEN, List<string> animalGroups) {
-        _animalNameBig.text = animalName;
+        _animalNameBig.GetComponentInChildren<Text>().text = animalName;
         _animalNameSubtextBig.text = animalNameSubtext;
-        _animalImageBig.sprite = animalImage;
+        _animalImageBig.GetComponent<Image>().sprite = animalImage;
         _animalDescriptionFullDE = animalDescriptionFullDE;
         _animalDescriptionFullEN = animalDescriptionFullEN;
         _animalGroups = animalGroups;
+
+        animalDescriptionBackupDE = animalDescriptionFullDE;
+        animalDescriptionBackupEN = animalDescriptionFullEN;
 
         if (german) {
             _animalDescription.text = _animalDescriptionFullDE;
@@ -61,7 +70,6 @@ public class SelectionManager : MonoBehaviour {
             }
         }
 
-        //TouchControlls.instance.detailedView = true;
         MainCameraController.instance.detailedView = true;
         OpenBigInfo();
     }
@@ -86,6 +94,28 @@ public class SelectionManager : MonoBehaviour {
                 break;
             }
         }
+
+        if(selectedButton != null) {
+            selectedButton.GetComponent<Image>().color = standardButtonColor;
+            selectedButton.GetComponentInChildren<Text>().color = Color.white;
+        }
+        selectedButton = group;
+        selectedButton.GetComponent<Image>().color = selectedButtonColor;
+        selectedButton.GetComponentInChildren<Text>().color = Color.black;
+    }
+
+    public void ClearGroupSelection() {
+        foreach(Button groupButton in animalGroupButtons) {
+            groupButton.GetComponent<Image>().color = standardButtonColor;
+            groupButton.GetComponentInChildren<Text>().color = Color.white;
+        }
+
+        if (german) {
+            _animalDescription.text = animalDescriptionBackupDE;
+        }
+        else {
+            _animalDescription.text = animalDescriptionBackupEN;
+        }
     }
 
     public void OpenBigInfo() {
@@ -94,6 +124,7 @@ public class SelectionManager : MonoBehaviour {
 
     public void ClosePanel() {
         panelBig.SetActive(false);
+        ClearGroupSelection();
         StartCoroutine(CloseP());
     }
 
@@ -115,7 +146,6 @@ public class SelectionManager : MonoBehaviour {
 
     private IEnumerator CloseP() {
         yield return new WaitForSecondsRealtime(0.1f);
-        //TouchControlls.instance.detailedView = false;
         MainCameraController.instance.detailedView = false;
     }
 
