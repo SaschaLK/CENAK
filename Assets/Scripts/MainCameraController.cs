@@ -13,7 +13,6 @@ public class MainCameraController : MonoBehaviour {
     public TapGesture tapGesture;
     public ScreenTransformGesture zoomGesture;
     [Space(10f)]
-    public float zoomFactor = 10;
     public Vector2 min;
     public Vector2 max;
     [Space(10f)]
@@ -106,7 +105,7 @@ public class MainCameraController : MonoBehaviour {
 
     private void Zoom(float increment, Vector3 zoomPosition) {
         TakeAction();
-        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize *= (2 - increment), 0.1f, 10f);
+        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize * (2 - increment), 0.1f, 10f);
         Vector3 zoomWorldPositionDelta;
         if(zoomGesture.ActivePointers.Count > 0) {
             zoomWorldPositionDelta = zoomPosition - Camera.main.ScreenToWorldPoint((zoomGesture.ActivePointers[0].Position + zoomGesture.ActivePointers[1].Position) / 2);
